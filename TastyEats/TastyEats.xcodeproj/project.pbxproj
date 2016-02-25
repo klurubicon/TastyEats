@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B213A1D7EB00DA740F /* CFNetwork.framework */; };
+		092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B413A1D7F000DA740F /* SystemConfiguration.framework */; };
+		092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B613A1D83C00DA740F /* MobileCoreServices.framework */; };
+		095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ACE8513C68EA300566243 /* AudioToolbox.framework */; };
+		099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */; };
+		09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07113A1D52D009C3FCF /* UIKit.framework */; };
+		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
+		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
+		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
+		6A8214C1351C3110D3BB7520 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6ADC6E04D663DE26EB5105 /* libPods.a */; };
+		74636BF31578281E00B44132 /* TEFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74636BF21578281E00B44132 /* TEFindFriendsCell.m */; };
+		747FC485156FFF74003349E1 /* TEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 747FC484156FFF74003349E1 /* TEConstants.m */; };
+		74B108A7156D7509005B421C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B108A6156D7509005B421C /* AddressBookUI.framework */; };
+		74B108A9156D7510005B421C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B108A8156D7510005B421C /* MessageUI.framework */; };
+		74B108AB156D7CC2005B421C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B108AA156D7CC2005B421C /* AddressBook.framework */; };
+		C4217BC01552230500CD3A47 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4217BBF1552230500CD3A47 /* AVFoundation.framework */; };
+		C49F586216028A980027383F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C49F586116028A980027383F /* Default-568h@2x.png */; };
+		C4A6D87C157859AA009FE621 /* TECache.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A6D87B157859AA009FE621 /* TECache.m */; };
+		C4A8949C15587CA600DC57D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A8949B15587CA600DC57D3 /* CoreLocation.framework */; };
+		C4BE670B157FC7D000A291C2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BE6701157FC7CA00A291C2 /* Default.png */; };
+		C4BE670C157FC7D000A291C2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BE6702157FC7CB00A291C2 /* Default@2x.png */; };
+		C4C9B94516B877AE00BB2862 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C402FEC51602AE3100273778 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4C9B94816B877AE00BB2862 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C9B94616B877AE00BB2862 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4C9B94916B877AE00BB2862 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C9B94716B877AE00BB2862 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4CD219915ED790500BC387F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CD219815ED790500BC387F /* libsqlite3.dylib */; };
+		C4F10291156C571C0061BC3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F1028D156C571B0061BC3E /* AppDelegate.m */; };
+		C4F10292156C571C0061BC3E /* TEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F10290156C571C0061BC3E /* TEUtility.m */; };
+		C4F102A0156C574A0061BC3E /* TEImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F1029D156C57490061BC3E /* TEImageView.m */; };
+		C4F102A1156C574A0061BC3E /* TEProfileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F1029F156C574A0061BC3E /* TEProfileImageView.m */; };
+		C4F102A4156C57560061BC3E /* TEPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102A3156C57560061BC3E /* TEPhotoHeaderView.m */; };
+		C4F102A9156C57620061BC3E /* TEPhotoDetailsFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102A6156C57620061BC3E /* TEPhotoDetailsFooterView.m */; };
+		C4F102AA156C57620061BC3E /* TEPhotoDetailsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102A8156C57620061BC3E /* TEPhotoDetailsHeaderView.m */; };
+		C4F102B3156C57820061BC3E /* TEActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102AC156C57810061BC3E /* TEActivityCell.m */; };
+		C4F102B4156C57820061BC3E /* TEBaseTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102AE156C57810061BC3E /* TEBaseTextCell.m */; };
+		C4F102B5156C57820061BC3E /* TELoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102B0156C57820061BC3E /* TELoadMoreCell.m */; };
+		C4F102B6156C57820061BC3E /* TEPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102B2156C57820061BC3E /* TEPhotoCell.m */; };
+		C4F102B9156C57B90061BC3E /* TESettingsButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102B8156C57B90061BC3E /* TESettingsButtonItem.m */; };
+		C4F102BC156C57CD0061BC3E /* TETabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102BB156C57CD0061BC3E /* TETabBarController.m */; };
+		C4F102C2156C57DA0061BC3E /* TELogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102BE156C57DA0061BC3E /* TELogInViewController.m */; };
+		C4F102C3156C57DA0061BC3E /* TEWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102C0156C57DA0061BC3E /* TEWelcomeViewController.m */; };
+		C4F102CB156C57EE0061BC3E /* TEActivityFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102C6156C57ED0061BC3E /* TEActivityFeedViewController.m */; };
+		C4F102CC156C57EE0061BC3E /* TEHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102C8156C57ED0061BC3E /* TEHomeViewController.m */; };
+		C4F102CD156C57EE0061BC3E /* TEPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102CA156C57EE0061BC3E /* TEPhotoTimelineViewController.m */; };
+		C4F102D2156C57FD0061BC3E /* TEAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102CF156C57FD0061BC3E /* TEAccountViewController.m */; };
+		C4F102D3156C57FD0061BC3E /* TEPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102D1156C57FD0061BC3E /* TEPhotoDetailsViewController.m */; };
+		C4F102D9156C580C0061BC3E /* TESettingsActionSheetDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102D7156C580C0061BC3E /* TESettingsActionSheetDelegate.m */; };
+		C4F102DC156C58170061BC3E /* TEEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102DB156C58170061BC3E /* TEEditPhotoViewController.m */; };
+		C4F102E2156C58440061BC3E /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4F102DF156C58440061BC3E /* Entitlements.plist */; };
+		C4F102EF156C58E00061BC3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102EC156C58E00061BC3E /* main.m */; };
+		E71D17E51A2E95470099D2C8 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */; };
+		E77D8A361A2EA1060039D40D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77D8A351A2EA1060039D40D /* Images.xcassets */; };
+		E77D8A3D1A2EAB9E0039D40D /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E77D8A3B1A2EAB9E0039D40D /* Default-667h@2x.png */; };
+		E77D8A3E1A2EAB9E0039D40D /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E77D8A3C1A2EAB9E0039D40D /* Default-736h@3x.png */; };
+		E7ADD51A17BEA36500E975E2 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ADD51417BEA34600E975E2 /* UIImage+AlphaAdditions.m */; };
+		E7ADD51B17BEA36800E975E2 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ADD51617BEA34600E975E2 /* UIImage+ResizeAdditions.m */; };
+		E7ADD51C17BEA36B00E975E2 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ADD51817BEA34600E975E2 /* UIImage+RoundedCornerAdditions.m */; };
+		E7BB90FA177BDBE6000A68F9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BB90F9177BDBE6000A68F9 /* Accelerate.framework */; };
+		EEE9FAAE1C7F76A300BFE1BC /* TEFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE9FAAD1C7F76A300BFE1BC /* TEFindFriendsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		092354AF13A1D7E200DA740F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		092354B213A1D7EB00DA740F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		092354B413A1D7F000DA740F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		092354B613A1D83C00DA740F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		095ACE8513C68EA300566243 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		09ABC06D13A1D52D009C3FCF /* TastyEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastyEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ABC07113A1D52D009C3FCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6BBE2127682498395DEF8455 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74636BF11578281E00B44132 /* TEFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEFindFriendsCell.h; path = TastyEats/TEFindFriendsCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		74636BF21578281E00B44132 /* TEFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEFindFriendsCell.m; path = TastyEats/TEFindFriendsCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		747FC484156FFF74003349E1 /* TEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEConstants.m; path = TastyEats/TEConstants.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		74B108A6156D7509005B421C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		74B108A8156D7510005B421C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		74B108AA156D7CC2005B421C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C402FEC51602AE3100273778 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C4217BBF1552230500CD3A47 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C4217BC11552234E00CD3A47 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C49F586116028A980027383F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4A6D87A157859AA009FE621 /* TECache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TECache.h; path = TastyEats/TECache.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4A6D87B157859AA009FE621 /* TECache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TECache.m; path = TastyEats/TECache.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4A8949B15587CA600DC57D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C4BE6701157FC7CA00A291C2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C4BE6702157FC7CB00A291C2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C4C9B94616B877AE00BB2862 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C4C9B94716B877AE00BB2862 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C4CD219815ED790500BC387F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C4F1028C156C571A0061BC3E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AppDelegate.h; path = TastyEats/AppDelegate.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F1028D156C571B0061BC3E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AppDelegate.m; path = TastyEats/AppDelegate.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F1028E156C571B0061BC3E /* TEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEConstants.h; path = TastyEats/TEConstants.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F1028F156C571B0061BC3E /* TEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEUtility.h; path = TastyEats/TEUtility.h; sourceTree = SOURCE_ROOT; };
+		C4F10290156C571C0061BC3E /* TEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEUtility.m; path = TastyEats/TEUtility.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F1029C156C57490061BC3E /* TEImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEImageView.h; path = TastyEats/TEImageView.h; sourceTree = SOURCE_ROOT; };
+		C4F1029D156C57490061BC3E /* TEImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEImageView.m; path = TastyEats/TEImageView.m; sourceTree = SOURCE_ROOT; };
+		C4F1029E156C57490061BC3E /* TEProfileImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEProfileImageView.h; path = TastyEats/TEProfileImageView.h; sourceTree = SOURCE_ROOT; };
+		C4F1029F156C574A0061BC3E /* TEProfileImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEProfileImageView.m; path = TastyEats/TEProfileImageView.m; sourceTree = SOURCE_ROOT; };
+		C4F102A2156C57560061BC3E /* TEPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPhotoHeaderView.h; path = TastyEats/TEPhotoHeaderView.h; sourceTree = SOURCE_ROOT; };
+		C4F102A3156C57560061BC3E /* TEPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEPhotoHeaderView.m; path = TastyEats/TEPhotoHeaderView.m; sourceTree = SOURCE_ROOT; };
+		C4F102A5156C57620061BC3E /* TEPhotoDetailsFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPhotoDetailsFooterView.h; path = TastyEats/TEPhotoDetailsFooterView.h; sourceTree = SOURCE_ROOT; };
+		C4F102A6156C57620061BC3E /* TEPhotoDetailsFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEPhotoDetailsFooterView.m; path = TastyEats/TEPhotoDetailsFooterView.m; sourceTree = SOURCE_ROOT; };
+		C4F102A7156C57620061BC3E /* TEPhotoDetailsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEPhotoDetailsHeaderView.h; path = TastyEats/TEPhotoDetailsHeaderView.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F102A8156C57620061BC3E /* TEPhotoDetailsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEPhotoDetailsHeaderView.m; path = TastyEats/TEPhotoDetailsHeaderView.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102AB156C57810061BC3E /* TEActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEActivityCell.h; path = TastyEats/TEActivityCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F102AC156C57810061BC3E /* TEActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEActivityCell.m; path = TastyEats/TEActivityCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102AD156C57810061BC3E /* TEBaseTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEBaseTextCell.h; path = TastyEats/TEBaseTextCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F102AE156C57810061BC3E /* TEBaseTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEBaseTextCell.m; path = TastyEats/TEBaseTextCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102AF156C57820061BC3E /* TELoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TELoadMoreCell.h; path = TastyEats/TELoadMoreCell.h; sourceTree = SOURCE_ROOT; };
+		C4F102B0156C57820061BC3E /* TELoadMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TELoadMoreCell.m; path = TastyEats/TELoadMoreCell.m; sourceTree = SOURCE_ROOT; };
+		C4F102B1156C57820061BC3E /* TEPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPhotoCell.h; path = TastyEats/TEPhotoCell.h; sourceTree = SOURCE_ROOT; };
+		C4F102B2156C57820061BC3E /* TEPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEPhotoCell.m; path = TastyEats/TEPhotoCell.m; sourceTree = SOURCE_ROOT; };
+		C4F102B7156C57B90061BC3E /* TESettingsButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TESettingsButtonItem.h; path = TastyEats/TESettingsButtonItem.h; sourceTree = SOURCE_ROOT; };
+		C4F102B8156C57B90061BC3E /* TESettingsButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TESettingsButtonItem.m; path = TastyEats/TESettingsButtonItem.m; sourceTree = SOURCE_ROOT; };
+		C4F102BA156C57CD0061BC3E /* TETabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TETabBarController.h; path = TastyEats/TETabBarController.h; sourceTree = SOURCE_ROOT; };
+		C4F102BB156C57CD0061BC3E /* TETabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TETabBarController.m; path = TastyEats/TETabBarController.m; sourceTree = SOURCE_ROOT; };
+		C4F102BD156C57DA0061BC3E /* TELogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TELogInViewController.h; path = TastyEats/TELogInViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102BE156C57DA0061BC3E /* TELogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TELogInViewController.m; path = TastyEats/TELogInViewController.m; sourceTree = SOURCE_ROOT; };
+		C4F102BF156C57DA0061BC3E /* TEWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEWelcomeViewController.h; path = TastyEats/TEWelcomeViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102C0156C57DA0061BC3E /* TEWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEWelcomeViewController.m; path = TastyEats/TEWelcomeViewController.m; sourceTree = SOURCE_ROOT; };
+		C4F102C5156C57ED0061BC3E /* TEActivityFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEActivityFeedViewController.h; path = TastyEats/TEActivityFeedViewController.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F102C6156C57ED0061BC3E /* TEActivityFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEActivityFeedViewController.m; path = TastyEats/TEActivityFeedViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102C7156C57ED0061BC3E /* TEHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEHomeViewController.h; path = TastyEats/TEHomeViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102C8156C57ED0061BC3E /* TEHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEHomeViewController.m; path = TastyEats/TEHomeViewController.m; sourceTree = SOURCE_ROOT; };
+		C4F102C9156C57ED0061BC3E /* TEPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPhotoTimelineViewController.h; path = TastyEats/TEPhotoTimelineViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102CA156C57EE0061BC3E /* TEPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEPhotoTimelineViewController.m; path = TastyEats/TEPhotoTimelineViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102CE156C57FD0061BC3E /* TEAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TEAccountViewController.h; path = TastyEats/TEAccountViewController.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C4F102CF156C57FD0061BC3E /* TEAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEAccountViewController.m; path = TastyEats/TEAccountViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102D0156C57FD0061BC3E /* TEPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEPhotoDetailsViewController.h; path = TastyEats/TEPhotoDetailsViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102D1156C57FD0061BC3E /* TEPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = TEPhotoDetailsViewController.m; path = TastyEats/TEPhotoDetailsViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C4F102D7156C580C0061BC3E /* TESettingsActionSheetDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TESettingsActionSheetDelegate.m; path = TastyEats/TESettingsActionSheetDelegate.m; sourceTree = SOURCE_ROOT; };
+		C4F102DA156C58170061BC3E /* TEEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEEditPhotoViewController.h; path = TastyEats/TEEditPhotoViewController.h; sourceTree = SOURCE_ROOT; };
+		C4F102DB156C58170061BC3E /* TEEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEEditPhotoViewController.m; path = TastyEats/TEEditPhotoViewController.m; sourceTree = SOURCE_ROOT; };
+		C4F102DF156C58440061BC3E /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = TastyEats/Entitlements.plist; sourceTree = SOURCE_ROOT; };
+		C4F102EB156C58E00061BC3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		C4F102EC156C58E00061BC3E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		C4F102ED156C58E00061BC3E /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Prefix.pch; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C72573981CEEB3F9214C134A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CA98FC245970E8BA889F862E /* Pods.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		E1D4865949801378C0C0ABE9 /* Pods.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.distribution.xcconfig; path = "Pods/Target Support Files/Pods/Pods.distribution.xcconfig"; sourceTree = "<group>"; };
+		E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		E77D8A351A2EA1060039D40D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TastyEats/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		E77D8A3B1A2EAB9E0039D40D /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		E77D8A3C1A2EAB9E0039D40D /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		E7ADD51317BEA34600E975E2 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+AlphaAdditions.h"; path = "TastyEats/UIImage+AlphaAdditions.h"; sourceTree = SOURCE_ROOT; };
+		E7ADD51417BEA34600E975E2 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AlphaAdditions.m"; path = "TastyEats/UIImage+AlphaAdditions.m"; sourceTree = SOURCE_ROOT; };
+		E7ADD51517BEA34600E975E2 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+ResizeAdditions.h"; path = "TastyEats/UIImage+ResizeAdditions.h"; sourceTree = SOURCE_ROOT; };
+		E7ADD51617BEA34600E975E2 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ResizeAdditions.m"; path = "TastyEats/UIImage+ResizeAdditions.m"; sourceTree = SOURCE_ROOT; };
+		E7ADD51717BEA34600E975E2 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCornerAdditions.h"; path = "TastyEats/UIImage+RoundedCornerAdditions.h"; sourceTree = SOURCE_ROOT; };
+		E7ADD51817BEA34600E975E2 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCornerAdditions.m"; path = "TastyEats/UIImage+RoundedCornerAdditions.m"; sourceTree = SOURCE_ROOT; };
+		E7BB90F9177BDBE6000A68F9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EE5FAB101C7CFAAB0094D221 /* TESettingsActionSheetDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESettingsActionSheetDelegate.h; sourceTree = "<group>"; };
+		EEE9FAAC1C7F76A300BFE1BC /* TEFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEFindFriendsViewController.h; sourceTree = "<group>"; };
+		EEE9FAAD1C7F76A300BFE1BC /* TEFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TEFindFriendsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FD6ADC6E04D663DE26EB5105 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09ABC06A13A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71D17E51A2E95470099D2C8 /* libstdc++.6.dylib in Frameworks */,
+				E7BB90FA177BDBE6000A68F9 /* Accelerate.framework in Frameworks */,
+				C4C9B94816B877AE00BB2862 /* AdSupport.framework in Frameworks */,
+				C4C9B94916B877AE00BB2862 /* Social.framework in Frameworks */,
+				C4C9B94516B877AE00BB2862 /* Accounts.framework in Frameworks */,
+				C4CD219915ED790500BC387F /* libsqlite3.dylib in Frameworks */,
+				74B108AB156D7CC2005B421C /* AddressBook.framework in Frameworks */,
+				74B108A9156D7510005B421C /* MessageUI.framework in Frameworks */,
+				74B108A7156D7509005B421C /* AddressBookUI.framework in Frameworks */,
+				C4A8949C15587CA600DC57D3 /* CoreLocation.framework in Frameworks */,
+				092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */,
+				C4217BC01552230500CD3A47 /* AVFoundation.framework in Frameworks */,
+				2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */,
+				099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */,
+				09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */,
+				095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */,
+				092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */,
+				092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */,
+				09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */,
+				09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */,
+				09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */,
+				6A8214C1351C3110D3BB7520 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09ABC06213A1D52D009C3FCF = {
+			isa = PBXGroup;
+			children = (
+				09ABC07713A1D52D009C3FCF /* TastyEats */,
+				09ABC07013A1D52D009C3FCF /* Frameworks */,
+				09ABC06E13A1D52D009C3FCF /* Products */,
+				2614EBD1DF91C096CAC9F534 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		09ABC06E13A1D52D009C3FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09ABC06D13A1D52D009C3FCF /* TastyEats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09ABC07013A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */,
+				E7BB90F9177BDBE6000A68F9 /* Accelerate.framework */,
+				C4C9B94616B877AE00BB2862 /* AdSupport.framework */,
+				C4C9B94716B877AE00BB2862 /* Social.framework */,
+				C4CD219815ED790500BC387F /* libsqlite3.dylib */,
+				099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */,
+				C402FEC51602AE3100273778 /* Accounts.framework */,
+				74B108AA156D7CC2005B421C /* AddressBook.framework */,
+				74B108A8156D7510005B421C /* MessageUI.framework */,
+				74B108A6156D7509005B421C /* AddressBookUI.framework */,
+				C4A8949B15587CA600DC57D3 /* CoreLocation.framework */,
+				C4217BC11552234E00CD3A47 /* ImageIO.framework */,
+				C4217BBF1552230500CD3A47 /* AVFoundation.framework */,
+				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
+				09BEF34B13D51C3F001BBCDB /* Security.framework */,
+				095ACE8513C68EA300566243 /* AudioToolbox.framework */,
+				092354B613A1D83C00DA740F /* MobileCoreServices.framework */,
+				092354B413A1D7F000DA740F /* SystemConfiguration.framework */,
+				092354B213A1D7EB00DA740F /* CFNetwork.framework */,
+				092354AF13A1D7E200DA740F /* CoreGraphics.framework */,
+				09ABC07113A1D52D009C3FCF /* UIKit.framework */,
+				09ABC07313A1D52D009C3FCF /* Foundation.framework */,
+				09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */,
+				FD6ADC6E04D663DE26EB5105 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09ABC07713A1D52D009C3FCF /* TastyEats */ = {
+			isa = PBXGroup;
+			children = (
+				E7ADD51917BEA34A00E975E2 /* Categories */,
+				EEE9FAAB1C7F734200BFE1BC /* Model */,
+				C4A89497155879FC00DC57D3 /* Views */,
+				C4A89496155879F600DC57D3 /* Controllers */,
+				C4B60864155B085600EFA90C /* Resources */,
+				E77D8A351A2EA1060039D40D /* Images.xcassets */,
+				09ABC07813A1D52D009C3FCF /* Supporting Files */,
+			);
+			path = TastyEats;
+			sourceTree = "<group>";
+		};
+		09ABC07813A1D52D009C3FCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102EB156C58E00061BC3E /* Info.plist */,
+				C4F102EC156C58E00061BC3E /* main.m */,
+				C4F102ED156C58E00061BC3E /* Prefix.pch */,
+				C4F102DF156C58440061BC3E /* Entitlements.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2614EBD1DF91C096CAC9F534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE2127682498395DEF8455 /* Pods.debug.xcconfig */,
+				C72573981CEEB3F9214C134A /* Pods.release.xcconfig */,
+				CA98FC245970E8BA889F862E /* Pods.ad hoc.xcconfig */,
+				E1D4865949801378C0C0ABE9 /* Pods.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74A504E21565F0C200CFA4E3 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C46AEBF8157FE078009CBA03 /* PAPBaseTextCell */,
+				C4F102AF156C57820061BC3E /* TELoadMoreCell.h */,
+				C4F102B0156C57820061BC3E /* TELoadMoreCell.m */,
+				C4F102B1156C57820061BC3E /* TEPhotoCell.h */,
+				C4F102B2156C57820061BC3E /* TEPhotoCell.m */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		74A504E31565F0E400CFA4E3 /* TimelineViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102A2156C57560061BC3E /* TEPhotoHeaderView.h */,
+				C4F102A3156C57560061BC3E /* TEPhotoHeaderView.m */,
+			);
+			name = TimelineViews;
+			sourceTree = "<group>";
+		};
+		74A504E41565F13C00CFA4E3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102D0156C57FD0061BC3E /* TEPhotoDetailsViewController.h */,
+				C4F102D1156C57FD0061BC3E /* TEPhotoDetailsViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		74A504E51565F17E00CFA4E3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102BF156C57DA0061BC3E /* TEWelcomeViewController.h */,
+				C4F102C0156C57DA0061BC3E /* TEWelcomeViewController.m */,
+				C4F102BD156C57DA0061BC3E /* TELogInViewController.h */,
+				C4F102BE156C57DA0061BC3E /* TELogInViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		74B86B911562DB2600CAFFD2 /* PhotoDetailsViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102A7156C57620061BC3E /* TEPhotoDetailsHeaderView.h */,
+				C4F102A8156C57620061BC3E /* TEPhotoDetailsHeaderView.m */,
+				C4F102A5156C57620061BC3E /* TEPhotoDetailsFooterView.h */,
+				C4F102A6156C57620061BC3E /* TEPhotoDetailsFooterView.m */,
+			);
+			name = PhotoDetailsViews;
+			sourceTree = "<group>";
+		};
+		C46AEBF8157FE078009CBA03 /* PAPBaseTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102AD156C57810061BC3E /* TEBaseTextCell.h */,
+				C4F102AE156C57810061BC3E /* TEBaseTextCell.m */,
+				C4F102AB156C57810061BC3E /* TEActivityCell.h */,
+				C4F102AC156C57810061BC3E /* TEActivityCell.m */,
+				74636BF11578281E00B44132 /* TEFindFriendsCell.h */,
+				74636BF21578281E00B44132 /* TEFindFriendsCell.m */,
+			);
+			name = PAPBaseTextCell;
+			sourceTree = "<group>";
+		};
+		C4A894921558795F00DC57D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102C9156C57ED0061BC3E /* TEPhotoTimelineViewController.h */,
+				C4F102CA156C57EE0061BC3E /* TEPhotoTimelineViewController.m */,
+				C4F102C7156C57ED0061BC3E /* TEHomeViewController.h */,
+				C4F102C8156C57ED0061BC3E /* TEHomeViewController.m */,
+				C4F102CE156C57FD0061BC3E /* TEAccountViewController.h */,
+				C4F102CF156C57FD0061BC3E /* TEAccountViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		C4A894931558796400DC57D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EEE9FAAC1C7F76A300BFE1BC /* TEFindFriendsViewController.h */,
+				EEE9FAAD1C7F76A300BFE1BC /* TEFindFriendsViewController.m */,
+				EE5FAB101C7CFAAB0094D221 /* TESettingsActionSheetDelegate.h */,
+				C4F102D7156C580C0061BC3E /* TESettingsActionSheetDelegate.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C4A894941558796C00DC57D3 /* Take Photo */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102DA156C58170061BC3E /* TEEditPhotoViewController.h */,
+				C4F102DB156C58170061BC3E /* TEEditPhotoViewController.m */,
+			);
+			name = "Take Photo";
+			sourceTree = "<group>";
+		};
+		C4A89496155879F600DC57D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74A504E51565F17E00CFA4E3 /* Login */,
+				C4A894921558795F00DC57D3 /* Home */,
+				C4A894941558796C00DC57D3 /* Take Photo */,
+				C4BB4B85156D5CB7008B4B56 /* Activity */,
+				74A504E41565F13C00CFA4E3 /* Detail */,
+				C4A894931558796400DC57D3 /* Settings */,
+				C4F102BA156C57CD0061BC3E /* TETabBarController.h */,
+				C4F102BB156C57CD0061BC3E /* TETabBarController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C4A89497155879FC00DC57D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74A504E31565F0E400CFA4E3 /* TimelineViews */,
+				74B86B911562DB2600CAFFD2 /* PhotoDetailsViews */,
+				74A504E21565F0C200CFA4E3 /* UITableViewCells */,
+				C4F102B7156C57B90061BC3E /* TESettingsButtonItem.h */,
+				C4F102B8156C57B90061BC3E /* TESettingsButtonItem.m */,
+				C4F1029C156C57490061BC3E /* TEImageView.h */,
+				C4F1029D156C57490061BC3E /* TEImageView.m */,
+				C4F1029E156C57490061BC3E /* TEProfileImageView.h */,
+				C4F1029F156C574A0061BC3E /* TEProfileImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C4B60864155B085600EFA90C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4BE6701157FC7CA00A291C2 /* Default.png */,
+				C4BE6702157FC7CB00A291C2 /* Default@2x.png */,
+				C49F586116028A980027383F /* Default-568h@2x.png */,
+				E77D8A3B1A2EAB9E0039D40D /* Default-667h@2x.png */,
+				E77D8A3C1A2EAB9E0039D40D /* Default-736h@3x.png */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		C4BB4B85156D5CB7008B4B56 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				C4F102C5156C57ED0061BC3E /* TEActivityFeedViewController.h */,
+				C4F102C6156C57ED0061BC3E /* TEActivityFeedViewController.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		E7ADD51917BEA34A00E975E2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E7ADD51317BEA34600E975E2 /* UIImage+AlphaAdditions.h */,
+				E7ADD51417BEA34600E975E2 /* UIImage+AlphaAdditions.m */,
+				E7ADD51517BEA34600E975E2 /* UIImage+ResizeAdditions.h */,
+				E7ADD51617BEA34600E975E2 /* UIImage+ResizeAdditions.m */,
+				E7ADD51717BEA34600E975E2 /* UIImage+RoundedCornerAdditions.h */,
+				E7ADD51817BEA34600E975E2 /* UIImage+RoundedCornerAdditions.m */,
+			);
+			name = Categories;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
+		EEE9FAAB1C7F734200BFE1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1028C156C571A0061BC3E /* AppDelegate.h */,
+				C4F1028D156C571B0061BC3E /* AppDelegate.m */,
+				C4F1028E156C571B0061BC3E /* TEConstants.h */,
+				747FC484156FFF74003349E1 /* TEConstants.m */,
+				C4F1028F156C571B0061BC3E /* TEUtility.h */,
+				C4F10290156C571C0061BC3E /* TEUtility.m */,
+				C4A6D87A157859AA009FE621 /* TECache.h */,
+				C4A6D87B157859AA009FE621 /* TECache.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09ABC06C13A1D52D009C3FCF /* TastyEats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "TastyEats" */;
+			buildPhases = (
+				2E15790DA3ADCD669F89A960 /* Check Pods Manifest.lock */,
+				09ABC06913A1D52D009C3FCF /* Sources */,
+				09ABC06A13A1D52D009C3FCF /* Frameworks */,
+				09ABC06B13A1D52D009C3FCF /* Resources */,
+				E7261CA11A2FF16D00DDE0A1 /* Upload Symbols Files */,
+				25394C46F94B5ACC8864C597 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TastyEats;
+			productName = ParseStarterProject;
+			productReference = 09ABC06D13A1D52D009C3FCF /* TastyEats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09ABC06413A1D52D009C3FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					09ABC06C13A1D52D009C3FCF = {
+						DevelopmentTeam = KS9FZQ3KTT;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "TastyEats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09ABC06213A1D52D009C3FCF;
+			productRefGroup = 09ABC06E13A1D52D009C3FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09ABC06C13A1D52D009C3FCF /* TastyEats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09ABC06B13A1D52D009C3FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F102E2156C58440061BC3E /* Entitlements.plist in Resources */,
+				C4BE670B157FC7D000A291C2 /* Default.png in Resources */,
+				C4BE670C157FC7D000A291C2 /* Default@2x.png in Resources */,
+				E77D8A3E1A2EAB9E0039D40D /* Default-736h@3x.png in Resources */,
+				E77D8A361A2EA1060039D40D /* Images.xcassets in Resources */,
+				C49F586216028A980027383F /* Default-568h@2x.png in Resources */,
+				E77D8A3D1A2EAB9E0039D40D /* Default-667h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25394C46F94B5ACC8864C597 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E15790DA3ADCD669F89A960 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7261CA11A2FF16D00DDE0A1 /* Upload Symbols Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Symbols Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/usr/local/bin:$PATH\n# Update the following with the path to your Cloud Code\n\n#parse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09ABC06913A1D52D009C3FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F10291156C571C0061BC3E /* AppDelegate.m in Sources */,
+				C4F10292156C571C0061BC3E /* TEUtility.m in Sources */,
+				C4F102A0156C574A0061BC3E /* TEImageView.m in Sources */,
+				C4F102A1156C574A0061BC3E /* TEProfileImageView.m in Sources */,
+				E7ADD51A17BEA36500E975E2 /* UIImage+AlphaAdditions.m in Sources */,
+				C4F102A4156C57560061BC3E /* TEPhotoHeaderView.m in Sources */,
+				C4F102A9156C57620061BC3E /* TEPhotoDetailsFooterView.m in Sources */,
+				C4F102AA156C57620061BC3E /* TEPhotoDetailsHeaderView.m in Sources */,
+				C4F102B3156C57820061BC3E /* TEActivityCell.m in Sources */,
+				C4F102B4156C57820061BC3E /* TEBaseTextCell.m in Sources */,
+				C4F102B5156C57820061BC3E /* TELoadMoreCell.m in Sources */,
+				C4F102B6156C57820061BC3E /* TEPhotoCell.m in Sources */,
+				C4F102B9156C57B90061BC3E /* TESettingsButtonItem.m in Sources */,
+				C4F102BC156C57CD0061BC3E /* TETabBarController.m in Sources */,
+				C4F102C2156C57DA0061BC3E /* TELogInViewController.m in Sources */,
+				C4F102C3156C57DA0061BC3E /* TEWelcomeViewController.m in Sources */,
+				C4F102CB156C57EE0061BC3E /* TEActivityFeedViewController.m in Sources */,
+				E7ADD51B17BEA36800E975E2 /* UIImage+ResizeAdditions.m in Sources */,
+				EEE9FAAE1C7F76A300BFE1BC /* TEFindFriendsViewController.m in Sources */,
+				C4F102CC156C57EE0061BC3E /* TEHomeViewController.m in Sources */,
+				C4F102CD156C57EE0061BC3E /* TEPhotoTimelineViewController.m in Sources */,
+				C4F102D2156C57FD0061BC3E /* TEAccountViewController.m in Sources */,
+				E7ADD51C17BEA36B00E975E2 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				C4F102D3156C57FD0061BC3E /* TEPhotoDetailsViewController.m in Sources */,
+				C4F102D9156C580C0061BC3E /* TESettingsActionSheetDelegate.m in Sources */,
+				C4F102DC156C58170061BC3E /* TEEditPhotoViewController.m in Sources */,
+				C4F102EF156C58E00061BC3E /* main.m in Sources */,
+				747FC485156FFF74003349E1 /* TEConstants.m in Sources */,
+				74636BF31578281E00B44132 /* TEFindFriendsCell.m in Sources */,
+				C4A6D87C157859AA009FE621 /* TECache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09ABC08C13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09ABC08D13A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		09ABC08F13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBE2127682498395DEF8455 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Vendor",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					DEBUG,
+					TESTING,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kailu.tastyeats;
+				PRODUCT_NAME = TastyEats;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09ABC09013A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72573981CEEB3F9214C134A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Vendor",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kailu.tastyeats;
+				PRODUCT_NAME = TastyEats;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C42500E01599424D0087C4F4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		C42500E11599424D0087C4F4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D4865949801378C0C0ABE9 /* Pods.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Vendor",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TESTING,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kailu.tastyeats;
+				PRODUCT_NAME = TastyEats;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		C4F10200156C54D40061BC3E /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = "Ad Hoc";
+		};
+		C4F10201156C54D40061BC3E /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA98FC245970E8BA889F862E /* Pods.ad hoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Vendor",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					TESTING,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kailu.tastyeats;
+				PRODUCT_NAME = TastyEats;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "TastyEats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08C13A1D52E009C3FCF /* Debug */,
+				09ABC08D13A1D52E009C3FCF /* Release */,
+				C4F10200156C54D40061BC3E /* Ad Hoc */,
+				C42500E01599424D0087C4F4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "TastyEats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08F13A1D52E009C3FCF /* Debug */,
+				09ABC09013A1D52E009C3FCF /* Release */,
+				C4F10201156C54D40061BC3E /* Ad Hoc */,
+				C42500E11599424D0087C4F4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09ABC06413A1D52D009C3FCF /* Project object */;
+}
